@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!--<source src="./assets/music.mp3">-->
+  <!--<iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/w5RmAytyFvc?si=j_Wda0n8KVADCeWU?rel=0&autoplay=1" frameborder="0" allowfullscreen loop></iframe>-->
+   <audio id="bg-music" src="./assets/music.mp3" loop></audio>
+
+
+    <div class="wrapper">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+           </div>
+    <nav id="desktop-nav">
+        <div class="logo">Nikhitha's Portfolio</div>
+        <div>
+            <ul class="nav-links">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Nikhitha Konnikkara Chandran</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile"><div class="section-container"></div>
+        <div class="section__pic-container">
+          <img src="./assets/abt me.jpg" alt="Nikhitha profile picture" 
+          alt="Profile picture"
+              class="about-pic"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="section__text__p2">
+            <span class="highlighted-text">
+                <span class="typing-animation" data-text="Nikhitha
+                Konnikkara 
+                Chandran"></span><br>
+        
+         </span>
+            
+          </h1>
+          <p class="section__text__roles">
+            <span class="role">Frontend Developer</span>
+      <span class="role">UI/UX Designer</span>
+      <span class="role">Web and App Developer</span>
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/NIKHITHA KONNIKKARA CHANDRAN-2.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          
+          <div id="socials-container">
+
+            <div class="soc">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/nikhitha-k-chandran-ab4a20246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnPtAkVb5SQeS%2B3povd51Ng%3D%3D'"
+              />
+              </div>
+              <div class="soc">
+             <img
+              src="./assets/insta.png"
+              alt="My Instagram profile"
+              class="icon"
+              onclick="location.href='https://www.instagram.com/nikhitha_k_chandran/'"
+            />
+              </div>
+              <div class="soc">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/NikhithaKChandran'"
+            />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+        src="./assets/Nikhitha_formal.jpg"
+        alt="Profile picture"
+        class="about-pic"
+      />
+    </div>
+
+    <!-- ✨ Text comes below the image -->
+    <div class="text-container">
+      <p>
+        I am a dedicated and innovative aspiring software professional with a passion for 
+        graphic designing and frontend developing. I have interests in logo designing,
+        web and app development, UI/UX Design. My commitment to the organisation and nation 
+        drives me to continuously seek out new challenges and opportunities for growth.
+        Whether collaborating with a team or working independently, I bring a strong work 
+        ethic and a creative approach to every project.
+      </p>
+    </div>
+  </div>  
+  
+  
+         <div class="check">
+  <!-- Certifications -->
+  <a href="certifications.html" class="details-container" style="text-decoration: none; color: inherit;">
+    <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+    <h3>Certifications</h3>
+  </a>
+  
+   <div class="myself">
+  <!-- Interests -->
+  <div class="details-container">
+    <img src="./assets/interests.png" alt="Interests icon" class="icon" />
+    <h3>Interests</h3>
+    <h6>Sketching, Music, Cooking, Creative Writing, Indian Classical Dance</h6>
+  </div>
+</div>
+  <!-- Education -->
+
+  <div class="myself">
+  <div class="details-container">
+    <img src="./assets/education.png" alt="Education icon" class="icon" />
+    <h3>Education</h3>
+    <h5>
+      &gt;&gt; BTech - CSE (Cybersecurity, ongoing) - 9.32 - RSET (Ernakulam)<br>
+      &gt;&gt; CBSE 12th - 97.2% - Amrita Vidyalayam (Thrissur)<br>
+      &gt;&gt; CBSE 10th - 97.6% - ISWK (Muscat, Oman)
+    </h5>
+    </div>
+  </div>
+</div>
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">
+            
+        </p>
+        <h2 class="title">Explore My Skills</h2>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Languages Known</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Expert</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Mysql</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Designing</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Blender</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Adobe Photoshop</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Flutter Flow</h3>
+                    <p>Expert</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.jpeg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Car Driving School Management System</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/NikhithaKChandran/CarDrivingSchoolManagement.git'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://cardriving.infy.uk/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/gesture.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Hand Gesture Control Recognition</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/NikhithaKChandran/Hand_Gesture_Recognition.git'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://youtube.com/playlist?list=PLpreQdx0hDLJg8B33GE4VaHn4eue_XW__&si=6CbO3j74MJF6mN6u'"
+                >
+                  Live Demo Video
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/weather.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Weather App</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/NikhithaKChandran/WeatherWeb.git'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://nikhithakchandran.github.io/WeatherWeb/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/steering.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Virtual Steering Game Controller</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/NikhithaKChandran/Virtual-Steering-Wheel-Controller.git'"
+                >
+                  Github
+                </button>
+               <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://youtu.be/ykTp1U_b8Ec?si=RyoVo-BE3CgV9ZV2'"
+                >
+  Live Demo Video
+              </button>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">nikhithakchandran@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/nikhitha-k-chandran-ab4a20246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnPtAkVb5SQeS%2B3povd51Ng%3D%3D">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nikhitha K Chandran. All Rights Reserved.</p>
+      </footer>
+   <script src="script.js">
+
+window.addEventListener('click', () => {
+    document.getElementById("song").play();
+ });
+   </script> 
+   <script>
+  window.addEventListener("click", () => {
+    const music = document.getElementById("bg-music");
+    if (music.paused) {
+      music.play().catch(e => console.log("Autoplay blocked"));
+    }
+  });
+</script>
+
+   
+ </div>
+</body>
+</html>
+
