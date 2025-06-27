@@ -365,7 +365,7 @@ section {
   justify-content: center;
   align-items: flex-start;
   margin: 20px 0;
-   margin-top: -109px;
+   margin-top: -145px;
    margin-left: 10px;
 }
 
@@ -379,6 +379,13 @@ section {
 }
 
 
+.music-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
 
 
 
@@ -646,13 +653,13 @@ section {
 }
 
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.0rem;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
 }
+
 
 article {
   display: flex;

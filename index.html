@@ -36,7 +36,20 @@
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
+              <img
+  src="./assets/music-icon.png"
+  alt="Play Music"
+  class="icon music-icon"
+  id="music-btn"
+  title="Play Music"
+/>
             </ul>
+
+
+
+
+
+
         </div>
     </nav>
     <nav id="hamburger-nav">
@@ -84,6 +97,12 @@
               onclick="window.open('./assets/FINAL RESUME COMPLETED FULLY NIKHITHA KONNIKKARA CHANDRAN-1.pdf')"
             >
               Download Resume
+            </button>
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/CV COMPLETED NIKHITHA KONNIKKARA CHANDRAN-1.pdf')"
+            >
+              Download CV
             </button>
             <button class="btn btn-color-1" onclick="location.href='./#contact'">
               Contact Info
@@ -262,54 +281,39 @@
               </div>
             </div>
             <div class="details-container">
-              <h2 class="experience-sub-title">Designing</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Blender</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Adobe Photoshop</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Figma</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Flutter Flow</h3>
-                    <p>Proficient</p>
-                  </div>
-                </article>
-              </div>
-            </div>
+  <h2 class="experience-sub-title">Designing</h2>
+  <div class="article-container">
+    <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Blender</h3>
+        <p>Basic</p>
+      </div>
+    </article>
+    <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Adobe Photoshop</h3>
+        <p>Basic</p>
+      </div>
+    </article>
+    <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Figma</h3>
+        <p>Basic</p>
+      </div>
+    </article>
+    <article>
+      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+      <div>
+        <h3>Flutter Flow</h3>
+        <p>Proficient</p>
+      </div>
+    </article>
+  </div>
+</div>
+
           </div>
         </div>
         <img
@@ -474,7 +478,7 @@ window.addEventListener('click', () => {
     document.getElementById("song").play();
  });
    </script> 
-   <script>
+   <!--<script>
   window.addEventListener("click", () => {
     const music = document.getElementById("bg-music");
     if (music.paused) {
@@ -482,9 +486,37 @@ window.addEventListener('click', () => {
     }
   });
 </script>
-
+-->
    
- </div>
+ 
+
+<script>
+  const musicBtn = document.getElementById("music-btn");
+  const music = document.getElementById("bg-music");
+
+  let isPlaying = false;
+
+  musicBtn.addEventListener("click", () => {
+    if (isPlaying) {
+      music.pause();
+      isPlaying = false;
+      musicBtn.style.opacity = "0.5"; // Optional: show muted visually
+    } else {
+      music.play().catch(e => console.log("Autoplay blocked"));
+      isPlaying = true;
+      musicBtn.style.opacity = "1"; // Optional: show active state
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+</div>
 </body>
 </html>
 
